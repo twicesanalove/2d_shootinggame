@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 8802078731794408151}
   - component: {fileID: 8273257565637343487}
   - component: {fileID: 8177930515321753872}
+  - component: {fileID: 4709401581851800675}
+  - component: {fileID: 2738801498636266315}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -115,3 +117,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 5
+--- !u!50 &4709401581851800675
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9170848125010933429}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &2738801498636266315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9170848125010933429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3d11bce53b5f4efab1dfee358a600f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.3
+  shotDelay: 0.5
+  bullet: {fileID: 7250915845487040007, guid: acc15edd9772c4f6084a9c8d33a6dff4, type: 3}
+  explosion: {fileID: 5384642469859983203, guid: 9a25eac187b13442ba77a5d4721f2acf,
+    type: 3}
